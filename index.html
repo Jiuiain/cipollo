@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Mixtape</title>
+    <title>Mi Playlist</title>
     <style>
         *, *::before, *::after {
             box-sizing: border-box;
@@ -71,23 +71,6 @@
             line-height: 1.6;
         }
 
-        .spotify-container {
-            margin-top: 20px;
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: inset 0 0 0 1px rgba(248, 113, 113, 0.18);
-            width: 100%;
-        }
-
-        .spotify-container iframe {
-            border: 0;
-            display: block;
-            width: 100%;
-            min-height: 420px;
-            aspect-ratio: 16 / 9;
-            max-height: 560px;
-        }
-
         .tracklist {
             width: 100%;
             margin-top: 0;
@@ -103,16 +86,7 @@
             }
 
             .page {
-                display: grid;
-                grid-template-columns: minmax(450px, 1.1fr) minmax(500px, 1.2fr);
-                gap: 44px;
                 padding: 28px 20px 32px;
-                justify-items: stretch;
-            }
-
-            .card {
-                max-width: 100%;
-                min-height: 560px;
             }
 
             .tracklist {
@@ -155,8 +129,13 @@
             line-height: 1.6;
         }
 
-        .spotify-container {
-            margin-top: 20px;
+        .tracklist {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .track {
+            width: 100%;
         }
         
         /* Ocultar scrollbar */
@@ -168,40 +147,46 @@
 <body>
 
     <div class="page">
-        <div class="card">
-            <h1>Buenos días, cipollo</h1>
-            <p>te amo</p>
-            
-            <div class="spotify-container">
-                <!-- REEMPLAZA ESTE CÓDIGO POR EL DE TU PLAYLIST -->
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2vOT6CNkTtScpeOdA00s6L?utm_source=generator&si=9d44c9545b83453e" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-        </div>
-
         <section class="tracklist">
         <div class="track">
             <h2>1. Cuarto movimiento: lo de dentro</h2>
             <h3> Extremoduro </h3>
             <p> Era un 10 de diciembre aquella vez que empezamos a hablar </p>
             <h4> <em>Buscando mi destino, viviendo indiferido <br>Sin ser, ni oír, ni dar <br> Y a cobro revertido quisiera hablar contigo <br> Y así, sintonizar</em> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Extremoduro： Cuarto Movimiento： La Realidad (Audio Oficial).mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
         <div class="track">
             <h2>2. El dia que te marches</h2>
             <h3> Jose Luis Perales</h3>
             <p> Te extraño cada segundo que no estoy contigo, cada minuto son horas y los dias nunca terminan</p>
             <h4> <em> El día que tú te marches lloraré <br> Dirás adiós con un beso, yo quedaré <br> Sentado en mi sillón, perdida la razón <br> Mis ojos verán cerrarse la puerta </em> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='El Dia Que Te Marches - Jose Luis Perales.mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
         <div class="track">
             <h2>3. The edge of night</h2>
             <h3> Pippin </h3>
             <p> Y recuerdo cada momento juntos, cada risa y cada pabra </p>
             <h4> <em> Home is behind, the world ahead <br> And there are many paths to tread <br> Through shadow to the edge of night, <br> Until the stars are all alight  </em> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='The edge of night - Pippin - LOTR (subtitulada).mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
         <div class="track">
             <h2>4. Calle melancolía</h2>
             <h3> Joaquín Sabina </h3>
             <p> Sonrío con melancolía, pensando en volver a verte. Sonrío con tristeza porque no podré verte </p>
             <h4> Ya el campo estará verde, debe ser primavera <br> Cruza por mi mirada un tren interminable <br> El barrio donde habito no es ninguna pradera <br> Desolado paisaje de antenas y de cables </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Joaquin Sabina - Calle Melancolia (Lyric Video).mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
 
         <div class="track">
@@ -209,12 +194,20 @@
             <h3> Sons of Aguirre & Scila </h3>
             <p> Podrán cortar todas las flores, pero no podrán detener la primavera </p>
             <p> <em>Y si estalla la guerra y he de partir <br> A matar o morir por un territorio <br> Será por los metros cuadrados del templo sagrado que mide <br> Que mide tu dormitorio <br><br> Mi patria no es otra  que los que alzan el vuelo <br> Y llegan al cielo aún con el ala rota <br> Si cojo el fusil será por decir que mi única bandera <br> Se deshilacha rodeada de escarcha en mitad de una acera</em> </p>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Sons of Aguirre & Scila - “Si cojo el Fusil” [AUDIO OFICIAL].mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
         <div class="track">
             <h2>6. Solo y sin ti</h2>
             <h3> Medina Azahara</h3>
             <p> Te amo, por lejos que estemos </p>
             <h4> <em> Entre mil recuerdos no puedo encontrarte <br> Y ando perdido en mi soledad <br> Y voy por las calles contando los días <br> Y se van pasando, solo y sin ti </em> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Solo y Sin Ti.mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
     
         <div class="track">
@@ -222,6 +215,10 @@
             <h3> Poison </h3>
             <p> Esta fue la primera canción que aprendí a tocar en guitarra por mi cuenta </p>
             <h4> <em> But I wonder does he know <br> Has he ever felt like this <br> And I know that you'd be here right now <br>f I could have let you know somehow I guess</em> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Poison - Every Rose Has Its Thorn.mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
 
         <div class="track">
@@ -229,6 +226,10 @@
             <h3> Bon Jovi </h3>
             <p>Te quiero, siempre</p>
             <h4> <em> I'll be there till the stars don't shine <br>Till the heavens burst and the words don't rhyme <br>I know when I die, you'll be on my mind <br> And I'll love you, always </em> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Bon Jovi - Always.mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
 
          <div class="track">
@@ -236,6 +237,10 @@
             <h3> Kiss </h3>
             <p> Te quiero, para siempre.</p>
             <h4> <em> It's forever, this time I know <br> And there's no doubt in my mind <br>Forever, until my life is through <br> Girl, I'll be loving you forever </em> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Kiss - Forever.mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
         <div class="track">
             <h2>10. Yo me quedo contigo aquí</h2>
@@ -243,6 +248,10 @@
             <p> Vamos a estar juntos aquí y dónde sea </p>
             <h4> <em> Que el tiempo pasa siempre a nuestro lado <br> Y, ay, ahí no se queda <br> Y ahora se ha convertido en pasado <br> Y no nos espera <br> Y cabalga desbocado al infinito <br> Y yo, yo me quedo contigo aquí</em></h4>
             <h4> Robe publicó esta canción durante la cuarentena. No está subida en spotify, pero hay una versión similar. La original está aquí: <a href="https://www.youtube.com/watch?v=DogmqsV_s3A" target="_blank">YouTube</a> </h4>
+            <audio controls style="width: 100%; margin-top: 18px;">
+                <source src='Yo me quedo contigo aquí.mp3' type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
 
 
